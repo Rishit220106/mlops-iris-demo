@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy Model') {
             steps {
-                sh 'cp iris_model.pkl /opt/mlapp/'
+                sh 'cp iris_model.pkl /var/lib/jenkins/mlapp/'
             }
         }
     }
